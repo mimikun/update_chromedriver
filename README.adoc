@@ -1,0 +1,14 @@
+= update_chromedriver
+
+Update chromedriver
+
+== Install
+
+[source,shell]
+----
+fisher add github.com/mimikun/update_chromedriver
+----
+
+== Require
+
+* chromedriver
