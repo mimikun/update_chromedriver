@@ -6,6 +6,7 @@ function update_chromedriver --description 'Update chromedriver'
         set VERSION (curl --silent https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
         set DESTINATION /usr/local/bin/chromedriver
         if test $OLD_VERSION != $VERSION
+            echo "Update found!"
             curl -L https://chromedriver.storage.googleapis.com/$VERSION/chromedriver_linux64.zip -o /tmp/chromedriver_linux64.zip
             sleep 5
             set CURRENTDIR (pwd)
