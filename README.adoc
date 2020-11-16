@@ -6,9 +6,10 @@ Update chromedriver
 
 [source,shell]
 ----
-fisher add github.com/mimikun/update_chromedriver
+fisher install mimikun/update_chromedriver
 ----
 
 == Require
 
 * chromedriver
+* https://github.com/mimikun/read_confirm[read_confirm]
