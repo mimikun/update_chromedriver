@@ -4,7 +4,7 @@ OLD_VERSION=$(chromedriver --version | cut -d ' ' -f 2)
 VERSION=$(curl --silent https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
 DESTINATION="/usr/local/bin/chromedriver"
 
-if $OLD_VERSION != "$VERSION"; then
+if test "$OLD_VERSION" != "$VERSION"; then
   echo "Update found!"
   curl -L "https://chromedriver.storage.googleapis.com/${VERSION}/chromedriver_linux64.zip" -o /tmp/chromedriver_linux64.zip
   sleep 5
